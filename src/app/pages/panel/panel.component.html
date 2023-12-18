@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Panel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="admin">
+  <div>
+    <p>
+      <ion-label (click)="profile()">Perfil</ion-label>
+    </p><br>
+  </div>
+  <div>
+    <p>
+      <ion-label (click)="feed()">Carga de datos de eventos</ion-label>
+    </p><br>
+  </div>
+  <div>
+    <p>
+      <ion-label (click)="dataUp()">Eventos</ion-label>
+    </p><br>
+  </div>
+  <div>
+    <p>
+      <ion-label (click)="dataUp()">Reportes</ion-label>
+    </p><br>
+  </div>
+  <div id="container">
+    <button class="Button_Primary" (click)="logout()">
+      <ion-label class="textbutton">Cerrar sesión {{email}}</ion-label>
+    </button>
+  </div>
+</ion-content>
+
+<ion-content *ngIf="!admin">
+  <div>
+    <p>
+      <ion-label (click)="feed()">Feed</ion-label>
+    </p><br>
+  </div>
+  <div id="container">
+    <button class="Button_Primary" (click)="logout()">
+      <ion-label class="textbutton">Cerrar sesión {{email}}</ion-label>
+    </button>
+  </div>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="name">
+      <ion-input class="inputData" autocomplete="off" placeholder="Email" [(ngModel)]="email"></ion-input>
+    </div>
+    <div class="email">
+      <ion-input class="inputData" autocomplete="off" placeholder="Password" [(ngModel)]="password" type="password"></ion-input>
+    </div>
+  <button class="Button_Primary" (click)="login()"><ion-label class="textbutton">Login</ion-label></button>
+  <p class="forgetPass">Registrate <ion-label (click)="regClick()">aquí</ion-label></p>
+</ion-content>

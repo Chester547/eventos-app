@@ -1,0 +1,27 @@
+
+<ion-header >
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="name">
+    <ion-input class="inputData" placeholder="Nombre" [(ngModel)]="newUser.nombre"></ion-input>
+  </div>
+  <div class="email">
+    <ion-input class="inputData" placeholder="Email" [(ngModel)]="newUser.email"></ion-input>
+  </div>
+  <div class="email">
+    <ion-input class="inputData" placeholder="Password" [(ngModel)]="newUser.password" type="password"></ion-input>
+  </div>
+  <div class="email">
+    <ion-input class="inputData" placeholder="Confirmar password" [(ngModel)]="repassword" type="password"></ion-input>
+  </div>
+
+  <div class="email">
+    <button class="Button_Primary" (click)="registro()"><ion-label class="textbutton">Registrar</ion-label></button>
+    <p class="forgetPass">Inicia sesión <ion-label (click)="logClick()">aquí</ion-label></p>
+  </div>
+
+</ion-content>

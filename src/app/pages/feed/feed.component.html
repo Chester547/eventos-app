@@ -1,0 +1,27 @@
+<ion-content>
+  <!-- <ion-card *ngFor="let feedData of newDatas">
+    <ion-label>{{feedData.nombre}}</ion-label>
+    <ion-card-header class="imgFeed">
+          <button (click)="delete()"><img src= {{feedData.newFile}}></button>
+        </ion-card-header>
+      </ion-card> -->
+  <ion-card (click)="detailItem(feedData)" [routerLink]="['/detalle']"  *ngFor="let feedData of newDatas">
+    <ion-label>{{feedData.nombre}}</ion-label>
+    <ion-card-header class="imgFeed">
+          <!-- <button (click)="delete()"><img src= {{feedData.newFile}}></button> -->
+        </ion-card-header>
+      </ion-card>
+        
+        <ion-accordion-group>
+        <ion-accordion value="{{feedData.id}}" *ngFor="let feedData of newDatas">
+          <ion-item slot="header" color="light">
+            <ion-label>{{feedData.nombre}}</ion-label>
+            <img src={{feedData.newFile}} alt="">
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            {{feedData.detalle}}
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+
+</ion-content>

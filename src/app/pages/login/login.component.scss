@@ -1,0 +1,141 @@
+.Button_Primary {
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 16px 32px;
+    gap: 12px;
+    
+    /*     position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 200px;
+    */
+/* align-items: center; */
+margin-top: 10%;
+width: 100%;
+height: 51px;
+    background: #000000;
+    border-radius: 100px;
+    .textbutton{
+      width: 72px;
+      height: 19px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #ffffff;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }       
+  }
+  
+  .forgetPass{
+  /* position: absolute; */
+  margin-left: 33.333333333333333333333333%;
+  margin-top: 10%;
+  width: 33.333333333333333333333333%;
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5DB075;
+  }
+
+    
+  .passw{
+    height: 50px;
+    /* position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 260px; */
+  }
+  
+  .name{
+/*   position: absolute;
+left: 16px;
+right: 16px;
+top: 128px; */
+margin-top: 10%;
+height: 50px;
+  border-color: #000000;
+  border-radius: 50%;
+  }
+  
+  .email{
+/*   position: absolute; */
+  height: 50px;
+/*   left: 16px;
+  right: 16px;
+  top: 194px;    
+ */  }    
+  
+  .titulo{
+  /* position: absolute; */
+  width: 150px;
+  height: 36px;
+/*   left: calc(50% - 150px/2 + 1.5px);
+  top: 5px; */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  } 
+  
+  .cabecera{
+  /* position: absolute; */
+  height: 36px;
+/*   left: 0px;
+  right: 0px;
+  top: 0px; */
+  }
+  
+  .closeHome{
+  position: absolute;
+  height: 50px;
+  left: 25px;
+  right: 0px;
+  top: 3px;
+  }
+  
+  .regButton{
+    height: 19px;
+    /* position: absolute;
+    width: 65px;
+    right: 10px;
+    top: 16px; */
+    color: #000000;
+  }
+  
+  .iconClose{
+/*   position: absolute;
+  width: 16px;
+  left: 10;
+  top: 16px; */
+  height: 16px;
+  }
+  
+  
+  .inputData{
+  box-sizing: border-box;
+  
+/*   position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%; */
+  
+  /* Gray/01 */
+  
+  background: #F6F6F6;
+  /* Gray/02 */
+  
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  }

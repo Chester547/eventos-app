@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Panel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="info">
+    <ion-item>
+      <img src="{{info.newFile}}" alt="Imagen de perfil">
+    </ion-item>
+    <ion-item>
+      <ion-label>{{info.email}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{info.nombre}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{info.password}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{info.uuid}}</ion-label>
+    </ion-item>
+  </ion-list>
+  
+  <div id="container">
+    <button class="Button_Primary" (click)="logout()">
+      <ion-label class="textbutton">Cerrar sesión {{correo}}</ion-label>
+    </button>
+  </div>
+</ion-content>

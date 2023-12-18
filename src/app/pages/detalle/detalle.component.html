@@ -1,0 +1,9 @@
+<ion-content *ngIf="newData">
+    <ion-label>{{newData.nombre}}</ion-label>
+    <br>
+    <img src="{{newData.newFile}}" alt="">
+    <ion-label>nombre</ion-label>
+    <div class="email">
+        <button class="Button_Primary" (click)="registro()"><ion-icon name="pencil-outline"></ion-icon></button>
+      </div>
+</ion-content>
